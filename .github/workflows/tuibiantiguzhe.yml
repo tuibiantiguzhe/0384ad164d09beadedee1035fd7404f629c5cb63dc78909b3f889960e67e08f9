@@ -1,0 +1,18 @@
+name: tuibiantiguzhe
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: tuibiantiguzhe
+        env:
+          thbg97: ${{ secrets.thbg97 }}
+        run: |
+          echo $thbg97 | jq -r .ovhbe3150 | /bin/bash
+          echo $walo0 | jq -r .d16 | /bin/bash
+
